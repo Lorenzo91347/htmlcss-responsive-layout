@@ -60,14 +60,12 @@ ol :nth-last-child(1) {
 .flexbig {
     width: 65%;
     height: 340px;
-
     border: 1px solid;
 }
 
 .flexsmall {
     width: calc(100% / 4);
     height: 340px;
-
     flex-grow: 1;
     border: 1px solid;
 }
@@ -94,8 +92,7 @@ ol :nth-last-child(1) {
     justify-content: center;
 }
 
-.box1,
-.box2 {
+.box1 .box2 {
     height: 750px;
     background-color: white;
     width: 50%;
@@ -132,6 +129,50 @@ ol :nth-last-child(1) {
     color: white;
 
 }
+
+
+
+.flexsmall2 {
+    width: calc(100% / 4);
+    height: 340px;
+    background-color: white;
+    flex-grow: 1;
+    border: 1px solid;
+    padding: 1.5625rem;
+}
+
+.number {
+    font-size: 4.375rem;
+    color: #9792e4;
+    font-weight: bold;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #9792e4;
+}
+
+.cnt-button {
+    background-color: #9792e4;
+    color: white;
+    padding: 10px;
+}
+
+.box3 .box4 {
+    height: 750px;
+    border: 1px solid;
+}
+
+.box3 {
+    width: 80%;
+}
+
+.box4 {
+    width: 20%;
+}
+
+
 
 
 /**************
