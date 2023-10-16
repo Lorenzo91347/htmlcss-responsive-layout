@@ -6,7 +6,6 @@
 }
 
 body {
-    width: 120rem;
     font-size: 1rem;
 }
 
@@ -42,16 +41,18 @@ ol :nth-last-child(1) {
     color: black;
 }
 
-.container {
+.container,
+.container3 {
     margin: auto;
-    width: 71.25rem;
+    width: 1140px;
+
 }
 
 .grid {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 4.6875rem;
+    margin: 4.6875rem 0;
     gap: 4.0625rem;
 }
 
@@ -59,14 +60,64 @@ ol :nth-last-child(1) {
 .flexbig {
     width: 65%;
     height: 340px;
-    background-color: #b5ddff;
+
     border: 1px solid;
 }
 
 .flexsmall {
     width: calc(100% / 4);
     height: 340px;
-    background-color: #b5ddff;
+
     flex-grow: 1;
     border: 1px solid;
+}
+
+.flexbig,
+.flexsmall {
+    background-color: #b5ddff;
+    color: #0084fd;
+    text-align: center;
+}
+
+.purple {
+    background-color: #9792e4;
+}
+
+.container2 {
+    width: 880px;
+    margin: auto;
+    padding: 75px 0;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+}
+
+.box1,
+.box2 {
+    height: 750px;
+    background-color: white;
+    width: 50%;
+    border: 1px solid;
+}
+
+.container3 {
+    text-align: center;
+}
+
+.container3 h2 {
+    font-size: 2rem;
+    color: #9792e4;
+}
+
+/**************
+Responsive
+**************/
+
+@media screen and (max-width:1920px) {
+    body {
+        max-width: 100%;
+    }
+
 }
