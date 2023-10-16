@@ -102,14 +102,37 @@ ol :nth-last-child(1) {
     border: 1px solid;
 }
 
-.container3 {
-    text-align: center;
+
+
+.container3 div {
+    margin: 2.5rem 0;
 }
 
 .container3 h2 {
     font-size: 2rem;
+    margin-bottom: 2rem;
     color: #9792e4;
 }
+
+.partner {
+    height: 270px;
+    background-color: #9792e4;
+    display: flex;
+
+}
+
+.p-image {
+    width: 20%;
+    border: 1px solid;
+}
+
+.p-text {
+    float: right;
+    width: 80%;
+    color: white;
+
+}
+
 
 /**************
 Responsive
