@@ -2,4 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+body {
+    width: 120rem;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #0084fd;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+}
+
+nav div {
+    background-color: orange;
+    padding: 25px;
+}
+
+
+
+nav ol li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 14px;
+
+}
+
+ol :nth-last-child(1) {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    margin: auto;
+    width: 71.25rem;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 4.6875rem;
+    gap: 4.0625rem;
+}
+
+
+.flexbig {
+    width: 65%;
+    height: 340px;
+    background-color: #b5ddff;
+    border: 1px solid;
+}
+
+.flexsmall {
+    width: calc(100% / 4);
+    height: 340px;
+    background-color: #b5ddff;
+    flex-grow: 1;
+    border: 1px solid;
 }
