@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Responsive Layout</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,13 +21,13 @@
     <header>
         <nav>
             <div>
-                LOGO
+                <img src="img/logo.png" alt="">
             </div>
             <ol>
-                <li>List</li>
-                <li>List</li>
-                <li>List</li>
-                <li>List</li>
+                <li>Planning</li>
+                <li>Testimonials</li>
+                <li>Features</li>
+                <li>About us</li>
                 <li>Get Started</li>
             </ol>
         </nav>
@@ -29,93 +37,171 @@
         <section>
             <div class="container">
                 <div class="grid">
-                    <div class="flexbig">BOXBIG</div>
-                    <div class="flexsmall">BOXSMALL</div>
-                    <div class="flexsmall">BOXSMALL</div>
-                    <div class="flexsmall">BOXSMALL</div>
-                    <div class="flexsmall">BOXSMALL</div>
+                    <div class="flexbig">
+                        <div class="m-title">
+                            Get a Demo application
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus enim soluta laborum nam
+                            laudantium assumenda dicta. Ipsa odit neque est voluptas quae! Harum quo ipsam vero
+                            exercitationem. Nam, ullam minus?</p>
+                        <div><i class="fa-brands fa-apple"></i> App Store</div>
+                        <img src="img/phone.png" alt="">
+                    </div>
+                    <div class="flexsmall">
+                        <div class="m-icon">
+                            <i class="fa-solid fa-file-code"></i>
+                        </div>
+                        <div class="m-title">Clean Code</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem inventore
+                            repudiandae architecto facilis quia asperiores, quam ea cumque ipsum id. Blanditiis quasi
+                            nam delectus deserunt sequi minus est nulla.</p>
+                    </div>
+                    <div class="flexsmall">
+                        <div class="m-icon">
+                            <i class="fa-solid fa-compass-drafting"></i></i>
+                        </div>
+                        <div class="m-title">Web Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem inventore
+                            repudiandae architecto facilis quia asperiores, quam ea cumque ipsum id. Blanditiis quasi
+                            nam delectus deserunt sequi minus est nulla.
+                        </p>
+
+                    </div>
+                    <div class="flexsmall">
+                        <div class="m-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="m-title">Development</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem inventore
+                            repudiandae architecto facilis quia asperiores, quam ea cumque ipsum id. Blanditiis quasi
+                            nam delectus deserunt sequi minus est nulla.
+                        </p>
+                    </div>
+                    <div class="flexsmall">
+                        <div class="m-icon">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div class="m-title">Branding</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem inventore
+                            repudiandae architecto facilis quia asperiores, quam ea cumque ipsum id. Blanditiis quasi
+                            nam delectus deserunt sequi minus est nulla.
+                        </p>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section class="purple">
             <div class="container2">
                 <div class="plan">
-                    <div class="box1">BOX</div>
-                    <div class="box2">BOX</div>
+                    <div class="box1"><img src="img/planning1.png" alt="">
+                        <div class="st-planning">Strategic Planning</div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil minus assumenda corrupti
+                            voluptatibus vel odio sed dolores facere ab tenetur perspiciatis quo, illo nulla accusamus
+                            est repudiandae obcaecati aut amet!</p>
+                    </div>
+                    <div class="box2">
+                        <img src="img/planning2.png" alt="">
+                        <div class="st-planning2">App Development</div>
+                        <p>Develop an on-demand app for your delivery
+                            business to reach your targeted customers
+                            without any interruption</p>
+                        <div class="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+
+                    </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="container3">
-                <div>TEXT</div>
-                <h2>Big Text</h2>
-                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam et beatae fugit quos, dignissimos
-                    expedita eos culpa. A consectetur laborum nobis voluptatibus quod earum dolorum in ab! In, quis
-                    cupiditate?</div>
-                <div class="partner">
-                    <div class="p-image">image</div>
-                    <div class="p-text">text</div>
+                <div>TESTIMONIALS</div>
+                <h2 class="p-title">We are committed and expert partners</h2>
+                <div>We place huge value on strong relationships and have seen the benefit
+                    they bring to our business.Customer feedback is vital in helping us to
+                    get it right.
                 </div>
                 <div class="partner">
-                    <div class="p-image">image</div>
-                    <div class="p-text">text</div>
+                    <div class="p-image"><img src="img/testimonial1.jpg" alt=""></div>
+                    <div class="p-text"><i class="fa-solid fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellendus nisi labore
+                        illum rem commodi accusamus dolores laboriosam omnis, at ex, impedit voluptate delectus deserunt
+                        alias debitis incidunt? A, iure?<i class="fa-solid fa-quote-right"></i>
+                        <div class="p-names">Nat Reynolds</div>
+                    </div>
                 </div>
                 <div class="partner">
-                    <div class="p-image">image</div>
-                    <div class="p-text">text</div>
+                    <div class="p-image"><img src="img/testimonial2.jpg" alt=""></div>
+                    <div class="p-text"><i class="fa-solid fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum odit impedit magni rerum
+                        suscipit tempore. Quaerat at accusantium, perferendis ex vitae doloremque fugit quasi eveniet
+                        libero, quae sunt consequatur.<i class="fa-solid fa-quote-right"></i>
+                        <div class="p-names">Celia Almeda</div>
+                    </div>
+                </div>
+
+                <div class="partner">
+                    <div class="p-image"><img src="img/testimonial3.jpg" alt=""></div>
+                    <div class="p-text"><i class="fa-solid fa-quote-left"></i>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam porro maxime neque aliquid vel
+                        ipsum ipsa, labore ab doloremque, sapiente voluptates accusamus cupiditate aut voluptas quia
+                        facilis ad saepe illum.<i class="fa-solid fa-quote-right"></i>
+                        <div class="p-names">Bob Roberts</div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="purple">
             <div class="container">
+                <div class="b-title">Benefits of working with us</div>
                 <div class="grid">
                     <div class="flexsmall2">
                         <div class="number">01</div>
-                        <h2>Big text</h2>
+                        <h2>High Quality</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
                             tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
                             modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">Button</div>
+                        <div class="cnt-button">More</div>
                     </div>
                     <div class="flexsmall2">
-                        <div class="number">01</div>
-                        <h2>Big text</h2>
+                        <div class="number">02</div>
+                        <h2>Creative Team</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
                             tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
                             modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">Button</div>
+                        <div class="cnt-button">More</div>
                     </div>
                     <div class="flexsmall2">
-                        <div class="number">01</div>
-                        <h2>Big text</h2>
+                        <div class="number">03</div>
+                        <h2>Amazing Results</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
                             tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
                             modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">Button</div>
+                        <div class="cnt-button">More</div>
                     </div>
                     <div class="flexsmall2">
-                        <div class="number">01</div>
-                        <h2>Big text</h2>
+                        <div class="number">04</div>
+                        <h2>Best Pricing</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
                             tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
                             modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">Button</div>
+                        <div class="cnt-button">More</div>
                     </div>
                     <div class="flexsmall2">
-                        <div class="number">01</div>
-                        <h2>Big text</h2>
+                        <div class="number">05</div>
+                        <h2>Innovation</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
                             tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
                             modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">Button</div>
+                        <div class="cnt-button">More</div>
                     </div>
                     <div class="flexsmall2">
-                        <div class="number">01</div>
-                        <h2>Big text</h2>
+                        <div class="number">06</div>
+                        <h2>Support</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
                             tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
                             modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">Button</div>
+                        <div class="cnt-button">More</div>
 
                     </div>
 
@@ -125,12 +211,50 @@
         <section>
             <div class="container2">
                 <div class="plan">
-                    <div class="box3"></div>
-                    <div class="box4"></div>
-
+                    <div class="box3">
+                        <div class="About-us">Big Text</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo mollitia doloribus
+                            amet eius iste, neque eaque non fugiat quaerat eum reprehenderit? Commodi cum doloremque
+                            odit culpa ex sint fugit.
+                            Magni repudiandae eaque corrupti saepe velit aliquam temporibus perspiciatis reprehenderit
+                            fugiat possimus, id deserunt porro quas a. Unde, odio animi! Placeat sapiente illum
+                            accusantium dicta nihil obcaecati eligendi eos itaque?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque explicabo illum
+                            ea, iste deserunt porro ratione, id molestiae fugit aspernatur reprehenderit harum autem
+                            iure dolores rem modi eos magni?
+                            Adipisci at repudiandae sequi similique minima odit sit obcaecati fuga blanditiis? Qui eum,
+                            nostrum pariatur corporis explicabo, reiciendis sed, doloribus quibusdam nulla reprehenderit
+                            quas numquam. Rem tempore ad animi quibusdam!
+                            Cumque provident hic esse laborum repellat iusto repudiandae quidem dolorum corrupti! Modi
+                            autem harum ab vitae magni. Veniam excepturi explicabo exercitationem, ipsam soluta officiis
+                            quia voluptate provident repellat, maxime quasi.</p>
+                    </div>
+                    <div class="box4">
+                        <div class="about-img">
+                        </div>
+                        <div class="about2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                            voluptatibus eos culpa
+                            cumque</div>
+                    </div>
                 </div>
+        </section>
+        <section class="purple">
+            <div class="container2">
+                <div class="get-st">Text</div>
+                <div class="price">Big Text</div>
+                <div class="free">Bigger Text</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis nemo eius eos a hic
+                    odio, dolor, sint, voluptatem sit quos? Odit ipsum, dignissimos vero mollitia non illum blanditiis
+                    minima?</div>
+                <div class="start">Get Started</div>
+                <div>TextTexttexttexttext</div>
 
             </div>
+        </section>
+        <section class="black">
+            <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+            <p>AAAAAAAAAAAAAAAAAAAAa</p>
+
         </section>
     </main>
 
