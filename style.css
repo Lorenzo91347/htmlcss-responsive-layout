@@ -61,6 +61,7 @@ ol :nth-last-child(1) {
     width: 65%;
     border-radius: .9375rem;
     position: relative;
+    padding: 0 2.5rem;
 }
 
 .flexsmall {
@@ -68,12 +69,12 @@ ol :nth-last-child(1) {
     flex-grow: 1;
     border-radius: .9375rem;
     text-align: center;
+    padding: 2.5rem;
 }
 
 .flexbig,
 .flexsmall {
     background-color: #b5ddff;
-    padding: 2.5rem;
 }
 
 .flexbig p {
@@ -84,7 +85,7 @@ ol :nth-last-child(1) {
 .m-title {
     font-size: 1.5rem;
     color: #0084fd;
-    margin-bottom: 2.5rem;
+    margin: 2.5rem 0;
 }
 
 .flexbig :nth-child(3) {
@@ -99,10 +100,10 @@ ol :nth-last-child(1) {
 }
 
 .flexbig img {
-    position: absolute;
-    width: 30%;
-    top: 102px;
-    right: 64px;
+    max-width: 15.625rem;
+    display: block;
+    padding-bottom: 0;
+    float: right;
 }
 
 .m-icon {
@@ -196,7 +197,10 @@ ol :nth-last-child(1) {
 }
 
 .p-image img {
-    width: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .container3 h2 {
@@ -355,6 +359,14 @@ Responsive
     .container,
     .container2,
     .container3 {
-        max-width: 768px;
+        max-width: 100%;
     }
+}
+
+@media screen and (max-width:375px) {
+
+    .grid {
+        display: block
+    }
+
 }
