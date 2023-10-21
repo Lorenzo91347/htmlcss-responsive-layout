@@ -50,7 +50,6 @@ ol :nth-last-child(1) {
 
 .grid {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 4.6875rem 0;
     gap: 4.0625rem;
@@ -62,6 +61,13 @@ ol :nth-last-child(1) {
     border-radius: .9375rem;
     position: relative;
     padding: 0 2.5rem;
+    display: flex;
+}
+
+.flexbig1,
+.flexbig2 {
+    width: 50%;
+    position: relative;
 }
 
 .flexsmall {
@@ -78,7 +84,6 @@ ol :nth-last-child(1) {
 }
 
 .flexbig p {
-    width: 50%;
     margin-bottom: 2.5rem;
 }
 
@@ -100,10 +105,11 @@ ol :nth-last-child(1) {
 }
 
 .flexbig img {
-    max-width: 15.625rem;
+    max-width: 85%;
     display: block;
     padding-bottom: 0;
-    float: right;
+    position: absolute;
+    bottom: 0;
 }
 
 .m-icon {
@@ -112,8 +118,15 @@ ol :nth-last-child(1) {
     margin-bottom: 1rem;
 }
 
-.purple {
+.purple,
+.purple2 {
     background-color: #9792e4;
+
+}
+
+.purple2 {
+    text-align: center;
+    color: white;
 }
 
 .container2 {
@@ -210,7 +223,7 @@ ol :nth-last-child(1) {
 }
 
 .partner {
-    height: 270px;
+
     background-color: #9792e4;
     display: flex;
 
@@ -279,11 +292,7 @@ ol :nth-last-child(1) {
     border-radius: 15px;
 }
 
-.box3,
-.box4 {
-    height: 750px;
-    border: 1px solid;
-}
+
 
 .box3 {
     width: 70%;
@@ -291,6 +300,11 @@ ol :nth-last-child(1) {
 
 .box4 {
     width: 30%;
+}
+
+.box3 p {
+    font-size: 1.125rem;
+    line-height: 30px;
 }
 
 .About-us {
@@ -302,18 +316,45 @@ ol :nth-last-child(1) {
 .about-img {
     height: 15.625rem;
     width: 15.625rem;
-    background-color: #9792e4;
-    border-radius: 50%;
+    position: relative;
+
+
 }
+
+.about-img img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.about-img i {
+    position: absolute;
+    font-size: 3.813rem;
+    color: #9792e4;
+    top: 0;
+    right: 0;
+}
+
+.about-btn {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #9792e4;
+    color: white;
+    text-align: center;
+}
+
 
 .box4 .about2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: #9792e4;
+    font-weight: bold;
 }
 
 .get-st {
     font-size: 1.125rem;
+    text-transform: uppercase;
+    color: gray;
 }
 
 .price {
@@ -322,6 +363,15 @@ ol :nth-last-child(1) {
 
 .free {
     font-size: 96px;
+    color: orange;
+}
+
+.container2 div a {
+    color: white;
+}
+
+.simple-text {
+    margin-bottom: 2.1875rem;
 }
 
 .purple .container2 {
@@ -331,11 +381,15 @@ ol :nth-last-child(1) {
 .start {
     background-color: white;
     color: #9792e4;
-    padding: 10px;
+    padding: 16px;
+    margin: auto;
+    width: 290px;
+    border-radius: 25px;
+    margin-bottom: 2.5rem;
 }
 
 .black {
-    background-color: black;
+    background-color: #333333;
     color: white;
     padding: 2.8125rem;
 }
@@ -354,12 +408,33 @@ ol :nth-last-child(1) {
 Responsive
 **************/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:810px) {
 
     .container,
     .container2,
     .container3 {
         max-width: 100%;
+    }
+
+    .flexbig1,
+    .flexbig2 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .flexbig {
+        flex-direction: column;
+    }
+
+    .flexbig2 img {
+        max-width: 50%;
+    }
+
+
+
+
+    .flexsmall2 {
+        width: calc(100% /3);
     }
 }
 
@@ -367,6 +442,26 @@ Responsive
 
     .grid {
         display: block
+    }
+
+    .flexbig {
+        width: 100%;
+    }
+
+
+    .flexsmall,
+    .flexsmall2 {
+        width: 100%;
+    }
+
+    .partner,
+    .plan {
+        flex-direction: column;
+    }
+
+    .box1,
+    .box2 {
+        width: 100%;
     }
 
 }
