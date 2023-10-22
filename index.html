@@ -2,280 +2,394 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Responsive Layout</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Responsive Layout</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="main.css" />
 </head>
 
-
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="img/logo.png" alt="">
-            </div>
-            <ol>
-                <li>Planning</li>
-                <li>Testimonials</li>
-                <li>Features</li>
-                <li>About us</li>
-                <li>Get Started</li>
-            </ol>
-        </nav>
+    <!--
+        HEADER
+        -->
+    <header class="site-header">
+        <div class="container flex space-between align-center">
+            <a class="site-brand" href="#">
+                <img src="img/logo.png" alt="Site name" />
+            </a>
+            <span class="hamburger white-text">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <nav class="main-menu">
+                <ul class="flex align-center">
+                    <li>
+                        <a class="white-text" href="#planning">Planning</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#benefits">Features</a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a class="btn small rounded" href="#bottom-banner">Get Started</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!--
+        MAIN CONTENT
+        -->
     <main>
-        <section>
+        <!-- Intro section -->
+        <section id="intro">
             <div class="container">
-                <div class="grid">
-                    <div class="flexbig">
-                        <div class="flexbig1">
-                            <div class="m-title">
-                                Get a Demo application
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus enim soluta laborum nam
-                                laudantium assumenda dicta. Ipsa odit neque est voluptas quae! Harum quo ipsam vero
-                                exercitationem. Nam, ullam minus?</p>
-                            <div><i class="fa-brands fa-apple"></i> App Store</div>
+                <div class="cards">
+                    <div class="card rounded">
+                        <div class="contents">
+                            <h3 class="title">Get a demo application</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ratione nobis, architecto
+                                ad dolore quod, facere totam quas recusandae
+                                blanditiis.
+                            </p>
+                            <a href="#" class="btn primary rounded">
+                                <i class="fa-brands fa-apple"></i>
+                                App Store
+                            </a>
                         </div>
-                        <div class="flexbig2">
-                            <img src="img/phone.png" alt="">
-                        </div>
+                        <img class="image" src="./img/phone.png" alt="lorem ipsum" />
                     </div>
-
-                    <div class="flexsmall">
-                        <div class="m-icon">
-                            <i class="fa-solid fa-file-code"></i>
-                        </div>
-                        <div class="m-title">Clean Code</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem inventore
-                            repudiandae architecto facilis quia asperiores, quam ea cumque ipsum id. Blanditiis quasi
-                            nam delectus deserunt sequi minus est nulla.</p>
-                    </div>
-                    <div class="flexsmall">
-                        <div class="m-icon">
-                            <i class="fa-solid fa-compass-drafting"></i></i>
-                        </div>
-                        <div class="m-title">Web Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem inventore
-                            repudiandae architecto facilis quia asperiores, quam ea cumque ipsum id. Blanditiis quasi
-                            nam delectus deserunt sequi minus est nulla.
-                        </p>
-
-                    </div>
-                    <div class="flexsmall">
-                        <div class="m-icon">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                        <div class="m-title">Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem inventore
-                            repudiandae architecto facilis quia asperiores, quam ea cumque ipsum id. Blanditiis quasi
-                            nam delectus deserunt sequi minus est nulla.
+                    <div class="card rounded text-center">
+                        <i class="icon fa-solid fa-file-code"></i>
+                        <h3 class="title">Clean Code</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Ratione nobis, architecto ad
+                            dolore quod, facere totam quas recusandae
+                            blanditiis.
                         </p>
                     </div>
-                    <div class="flexsmall">
-                        <div class="m-icon">
-                            <i class="fa-solid fa-bullhorn"></i>
-                        </div>
-                        <div class="m-title">Branding</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem inventore
-                            repudiandae architecto facilis quia asperiores, quam ea cumque ipsum id. Blanditiis quasi
-                            nam delectus deserunt sequi minus est nulla.
+                    <div class="card rounded text-center">
+                        <i class="icon fa-solid fa-compass-drafting"></i>
+                        <h3 class="title">Web Design</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Ratione nobis, architecto ad
+                            dolore quod, facere totam quas recusandae
+                            blanditiis.
+                        </p>
+                    </div>
+                    <div class="card rounded text-center">
+                        <i class="icon fa-solid fa-laptop-code"></i>
+                        <h3 class="title">Developement</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Ratione nobis, architecto ad
+                            dolore quod, facere totam quas recusandae
+                            blanditiis.
+                        </p>
+                    </div>
+                    <div class="card rounded text-center">
+                        <i class="icon fa-solid fa-bullhorn"></i>
+                        <h3 class="title">Branding</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Ratione nobis, architecto ad
+                            dolore quod, facere totam quas recusandae
+                            blanditiis.
                         </p>
                     </div>
                 </div>
             </div>
-            </div>
         </section>
-        <section class="purple">
-            <div class="container2">
-                <div class="plan">
-                    <div class="box1"><img src="img/planning1.png" alt="">
-                        <div class="st-planning">Strategic Planning</div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil minus assumenda corrupti
-                            voluptatibus vel odio sed dolores facere ab tenetur perspiciatis quo, illo nulla accusamus
-                            est repudiandae obcaecati aut amet!</p>
-                    </div>
-                    <div class="box2">
-                        <img src="img/planning2.png" alt="">
-                        <div class="st-planning2">App Development</div>
-                        <p>Develop an on-demand app for your delivery
+
+        <!-- Planning section -->
+        <section id="planning">
+            <div class="container columns">
+                <div class="col">
+                    <img class="image" src="./img/planning1.png" alt="planning lorem ipsum" />
+                    <h2 class="title">Strategic Planning</h2>
+                    <p class="text">
+                        Egestas dui id ornare arcu odio. In tellus integer
+                        feugiat scelerisque varius morbi enim nunc.
+                        Habitasse platea dictumst quisque sagittis. Interdum
+                        velit euismod in pellentesque massa placerat duis.
+                        Quis viverra nibh cras pulvinar mattis.
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="card rounded-big text-center">
+                        <img src="./img/planning2.png" alt="planning lorem ipsum" class="card-img" />
+                        <h3 class="card-title">App Developement</h3>
+                        <p class="card-text">
+                            Develop an on-demand app for your delivery
                             business to reach your targeted customers
-                            without any interruption</p>
-                        <div class="arrow"><i class="fa-solid fa-arrow-down"></i></div>
-
-
+                            without any interruption.
+                        </p>
+                        <i class="icon fa-solid fa-arrow-down-long"></i>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container3">
-                <div>TESTIMONIALS</div>
-                <h2 class="p-title">We are committed and expert partners</h2>
-                <div>We place huge value on strong relationships and have seen the benefit
-                    they bring to our business.Customer feedback is vital in helping us to
-                    get it right.
-                </div>
-                <div class="partner">
-                    <div class="p-image"><img src="img/testimonial1.jpg" alt=""></div>
-                    <div class="p-text"><i class="fa-solid fa-quote-left"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellendus nisi labore
-                        illum rem commodi accusamus dolores laboriosam omnis, at ex, impedit voluptate delectus deserunt
-                        alias debitis incidunt? A, iure?<i class="fa-solid fa-quote-right"></i>
-                        <div class="p-names">Nat Reynolds</div>
-                    </div>
-                </div>
-                <div class="partner">
-                    <div class="p-image"><img src="img/testimonial2.jpg" alt=""></div>
-                    <div class="p-text"><i class="fa-solid fa-quote-left"></i>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsum odit impedit magni rerum
-                        suscipit tempore. Quaerat at accusantium, perferendis ex vitae doloremque fugit quasi eveniet
-                        libero, quae sunt consequatur.<i class="fa-solid fa-quote-right"></i>
-                        <div class="p-names">Celia Almeda</div>
-                    </div>
-                </div>
 
-                <div class="partner">
-                    <div class="p-image"><img src="img/testimonial3.jpg" alt=""></div>
-                    <div class="p-text"><i class="fa-solid fa-quote-left"></i>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam porro maxime neque aliquid vel
-                        ipsum ipsa, labore ab doloremque, sapiente voluptates accusamus cupiditate aut voluptas quia
-                        facilis ad saepe illum.<i class="fa-solid fa-quote-right"></i>
-                        <div class="p-names">Bob Roberts</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="purple">
+        <!-- Testimonials section -->
+        <section id="testimonials" class="text-center">
             <div class="container">
-                <div class="b-title">Benefits of working with us</div>
-                <div class="grid">
-                    <div class="flexsmall2">
-                        <div class="number">01</div>
-                        <h2>High Quality</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
-                            tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
-                            modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">More</div>
-                    </div>
-                    <div class="flexsmall2">
-                        <div class="number">02</div>
-                        <h2>Creative Team</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
-                            tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
-                            modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">More</div>
-                    </div>
-                    <div class="flexsmall2">
-                        <div class="number">03</div>
-                        <h2>Amazing Results</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
-                            tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
-                            modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">More</div>
-                    </div>
-                    <div class="flexsmall2">
-                        <div class="number">04</div>
-                        <h2>Best Pricing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
-                            tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
-                            modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">More</div>
-                    </div>
-                    <div class="flexsmall2">
-                        <div class="number">05</div>
-                        <h2>Innovation</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
-                            tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
-                            modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">More</div>
-                    </div>
-                    <div class="flexsmall2">
-                        <div class="number">06</div>
-                        <h2>Support</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque officia perspiciatis
-                            tempore consequuntur suscipit eum itaque repellendus magnam inventore accusantium dolorem,
-                            modi delectus. Voluptatibus minus at voluptatum odit totam. Architecto!</p>
-                        <div class="cnt-button">More</div>
-
-                    </div>
-
-
-                </div>
-        </section>
-        <section>
-            <div class="container2">
-                <div class="plan">
-                    <div class="box3">
-                        <div class="About-us">About Us</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo mollitia doloribus
-                            amet eius iste, neque eaque non fugiat quaerat eum reprehenderit? Commodi cum doloremque
-                            odit culpa ex sint fugit.
-                            Magni repudiandae eaque corrupti saepe velit aliquam temporibus perspiciatis reprehenderit
-                            fugiat possimus, id deserunt porro quas a. Unde, odio animi! Placeat sapiente illum
-                            accusantium dicta nihil obcaecati eligendi eos itaque?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque explicabo illum
-                            ea, iste deserunt porro ratione, id molestiae fugit aspernatur reprehenderit harum autem
-                            iure dolores rem modi eos magni?
-                            Adipisci at repudiandae sequi similique minima odit sit obcaecati fuga blanditiis? Qui eum,
-                            nostrum pariatur corporis explicabo, reiciendis sed, doloribus quibusdam nulla reprehenderit
-                            quas numquam. Rem tempore ad animi quibusdam!
-                            Cumque provident hic esse laborum repellat iusto repudiandae quidem dolorum corrupti! Modi
-                            autem harum ab vitae magni. Veniam excepturi explicabo exercitationem, ipsam soluta officiis
-                            quia voluptate provident repellat, maxime quasi.</p>
-                    </div>
-                    <div class="box4">
-                        <div class="about-img">
-                            <img src="img/about.jpg" alt="">
-                            <i class="fa-solid fa-quote-left"></i>
-                        </div>
-                        <div class="about2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                            voluptatibus eos culpa
-                            cumque
-                        </div>
-                        <div class="about-btn"><i class="fa-brands fa-linkedin"></i> Find me in Linkedin</div>
-
-
-
+                <h4 class="pre-title">Testimonials</h4>
+                <h2 class="section-title accent-text">
+                    We are committed expert partners
+                </h2>
+                <p class="text">
+                    We place huge value on strong relationships and have
+                    seen the benefit they bring to our business. Customer
+                    feedback is vital in helping us to get it right.
+                </p>
+                <!-- Cards -->
+                <div class="card rounded-big">
+                    <!-- Spunto per object-fit -->
+                    <figure class="card-image rounded-50">
+                        <img src="./img/testimonial1.jpg" alt="Nat Reynolds" />
+                    </figure>
+                    <div class="card-contents">
+                        <p class="card-text">
+                            <!-- Oppure in alternativa pseudo elementi -->
+                            <span class="icon">&ldquo;</span>
+                            Vitae suscipit tellus mauris a diam maecenas sed
+                            enim ut. Mauris augue neque gravida in
+                            fermentum. Praesent semper feugiat nibh pulvinar
+                            proin.
+                            <span class="icon">&rdquo;</span>
+                        </p>
+                        <div class="name">Nat Reynolds</div>
                     </div>
                 </div>
-        </section>
-        <section class="purple2">
-            <div class="container2">
-                <div class="get-st">Get Started</div>
-                <div class="price">Simple,Transparent Pricing!</div>
-                <div class="free">It's Free!</div>
-                <div class="simple-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore debitis nemo
-                    eius eos a hic
-                    odio, dolor, sint, voluptatem sit quos? Odit ipsum, dignissimos vero mollitia non illum blanditiis
-                    minima?</div>
-                <div class="start">Get Started</div>
-                <div class="copyright">Copyright 2021 Boolean <i class="fa-solid fa-circle"></i> Classe XX <i
-                        class="fa-solid fa-circle"></i>
-                    <a href="">Privacy policy</a>
+                <div class="card rounded-big">
+                    <!-- Spunto per object-fit -->
+                    <figure class="card-image rounded-50">
+                        <img src="./img/testimonial2.jpg" alt="Celia Almeda" />
+                    </figure>
+                    <div class="card-contents">
+                        <p class="card-text">
+                            <!-- Oppure in alternativa pseudo elementi -->
+                            <span class="icon">&ldquo;</span>
+                            Pharetra vel turpis nunc eget lorem. Quisque id
+                            diam vel quam elementum pulvinar etiam. Urna
+                            porttitor rhoncus dolor purus non enim praesent
+                            elementum.
+                            <span class="icon">&rdquo;</span>
+                        </p>
+                        <div class="name">Celia Almeda</div>
+                    </div>
                 </div>
-
+                <div class="card rounded-big">
+                    <!-- Spunto per object-fit -->
+                    <figure class="card-image rounded-50">
+                        <img src="./img/testimonial3.jpg" alt="Bob Roberts" />
+                    </figure>
+                    <div class="card-contents">
+                        <p class="card-text">
+                            <!-- Oppure in alternativa pseudo elementi -->
+                            <span class="icon">&ldquo;</span>
+                            Mauris augue neque gravida in fermentum.
+                            Praesent semper feugiat nibh sed pulvinar proin.
+                            Nibh nisl condimentum id venenatis a
+                            condimentum.
+                            <span class="icon">&rdquo;</span>
+                        </p>
+                        <div class="name">Bob Roberts</div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="black">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat sed voluptas! Voluptatum et corrupti
-                possimus architecto voluptatem modi nesciunt corporis quis! Sequi tempora deserunt quis sint fuga
-                libero. In.</p>
-            <p><a href="">Lorem ipsum</a>Bla Bla Bla Bla Bla <a href="">Boolean Careers</a></p>
 
+        <!-- Benefits section -->
+        <section id="benefits">
+            <div class="container">
+                <h2 class="section-title white-text text-center">
+                    Benefits of working with us
+                </h2>
+
+                <!-- Cards -->
+                <div class="cards">
+                    <div class="card rounded">
+                        <h4 class="card-pre-title accent-text">01</h4>
+                        <h3 class="card-title accent-text">
+                            Hight Quality
+                        </h3>
+                        <p class="card-text">
+                            Vitae suscipit tellus mauris a diam maecenas sed
+                            enim ut. Mauris augue neque gravida in
+                            fermentum. Praesent semper feugiat nibh sed
+                            pulvinar proin id venenatis.
+                        </p>
+                        <a class="btn accent rounded" href="#">more</a>
+                    </div>
+                    <div class="card rounded">
+                        <h4 class="card-pre-title accent-text">02</h4>
+                        <h3 class="card-title accent-text">
+                            Creative Team
+                        </h3>
+                        <p class="card-text">
+                            Vitae suscipit tellus mauris a diam maecenas sed
+                            enim ut. Mauris augue neque gravida in
+                            fermentum. Praesent semper feugiat nibh sed
+                            pulvinar proin id venenatis.
+                        </p>
+                        <a class="btn accent rounded" href="#">more</a>
+                    </div>
+                    <div class="card rounded">
+                        <h4 class="card-pre-title accent-text">03</h4>
+                        <h3 class="card-title accent-text">
+                            Amazing Results
+                        </h3>
+                        <p class="card-text">
+                            Vitae suscipit tellus mauris a diam maecenas sed
+                            enim ut. Mauris augue neque gravida in
+                            fermentum. Praesent semper feugiat nibh sed
+                            pulvinar proin id venenatis.
+                        </p>
+                        <a class="btn accent rounded" href="#">more</a>
+                    </div>
+                    <div class="card rounded">
+                        <h4 class="card-pre-title accent-text">04</h4>
+                        <h3 class="card-title accent-text">Best Pricing</h3>
+                        <p class="card-text">
+                            Vitae suscipit tellus mauris a diam maecenas sed
+                            enim ut. Mauris augue neque gravida in
+                            fermentum. Praesent semper feugiat nibh sed
+                            pulvinar proin id venenatis.
+                        </p>
+                        <a class="btn accent rounded" href="#">more</a>
+                    </div>
+                    <div class="card rounded">
+                        <h4 class="card-pre-title accent-text">05</h4>
+                        <h3 class="card-title accent-text">Innovations</h3>
+                        <p class="card-text">
+                            Vitae suscipit tellus mauris a diam maecenas sed
+                            enim ut. Mauris augue neque gravida in
+                            fermentum. Praesent semper feugiat nibh sed
+                            pulvinar proin id venenatis.
+                        </p>
+                        <a class="btn accent rounded" href="#">more</a>
+                    </div>
+                    <div class="card rounded">
+                        <h4 class="card-pre-title accent-text">06</h4>
+                        <h3 class="card-title accent-text">24/7 Support</h3>
+                        <p class="card-text">
+                            Vitae suscipit tellus mauris a diam maecenas sed
+                            enim ut. Mauris augue neque gravida in
+                            fermentum. Praesent semper feugiat nibh sed
+                            pulvinar proin id venenatis.
+                        </p>
+                        <a class="btn accent rounded" href="#">more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about">
+            <div class="container">
+                <div class="columns">
+                    <div class="col">
+                        <h2 class="section-title accent-text">About Us</h2>
+                        <div class="text">
+                            <p>
+                                Sample text. Click to Egestas egestas
+                                fringilla phasellus faucibus scelerisque
+                                eleifend donec pretium vulputate. Pharetra
+                                magna ac placerat vestibulum. Quam lacus
+                                suspendisse faucibus interdum posuere lorem.
+                                Egestas tellus rutrum tellus pellentesque eu
+                                tincidunt. Neque vitae tempus quam
+                                pellentesque nec. Vel elit scelerisque
+                                mauris pellentesque pulvinar pellentesque
+                                habitant morbi. Interdum velit euismod in
+                                pellentesque massa placerat duis.
+                            </p>
+                            <p>
+                                Quis viverra nibh cras pulvinar mattis.
+                                Ornare arcu dui vivamus arcu felis bibendum
+                                ut tristique. Pellentesque eu tincidunt
+                                tortor aliquam nulla facilisi cras fermentum
+                                odio. Dignissim diam quis enim lobortis
+                                scelerisque. Tellus molestie nunc non
+                                blandit massa enim. the text box. Click
+                                again or double click to start editing the
+                                text.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="quote">
+                            <figure class="quote-image">
+                                <img src="./img/about.jpg" alt="About lorem ipsum" />
+                                <span class="icon accent-text">&ldquo;</span>
+                            </figure>
+                            <h4 class="quote-text accent-text">
+                                I help companies tincidunt tortor aliquam
+                                nulla facilisi cras fermentum odio.
+                            </h4>
+                            <a class="btn small accent rounded" href="#">
+                                <i class="btn-icon fa-brands fa-linkedin"></i>
+                                Find me on linkedin
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Banner -->
+        <section id="bottom-banner" class="white-text text-center">
+            <h5 class="title-one">Get Started</h5>
+            <h2 class="title-two">Simple, Transparent Pricing</h2>
+            <h3 class="title-three">It's Free!</h3>
+            <p class="text">
+                We’re still in beta and we will be for awhile. As we add
+                more functionality, we’ll look into other plans with more
+                controls.
+            </p>
+            <a class="btn big rounded-big" href="#">Get Started</a>
+            <div class="copy">
+                Copyright 2021 Boolean • Classe XX •
+                <a class="white-text" href="#">Privacy policy</a>
+            </div>
         </section>
     </main>
 
+    <!--
+        FOOTER
+        -->
+    <footer class="site-footer text-center white-text">
+        <div class="contents">
+            <div class="text-one">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Commodi maiores minima vitae vero nulla pariatur impedit!
+            </div>
+            <div class="text-two">
+                <a class="accent-text" href="#">Lorem ipsum</a>
+                scelerisque mauris pellentesque
+                <a class="accent-text" href="#">Boolean careers</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
